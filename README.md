@@ -1,6 +1,6 @@
-# Fader
+# FadeSteps
 
-## fader(startHex, finishHex, steps)
+## fadeSteps(startHex, finishHex, steps)
 
     => array - hex strings of all steps for fading
 

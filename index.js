@@ -1,5 +1,5 @@
 
-function fader (startHex, finishHex, steps) {
+function fadeSteps (startHex, finishHex, steps) {
   var startRgb = hexToRgb(startHex);
   var finishRgb = hexToRgb(finishHex);
   steps = steps - 1;
@@ -41,6 +41,6 @@ function hexToRgb(str) {
   return out;
 }
 
-module.exports = fader;
+module.exports = fadeSteps;
 module.exports.rgbToHex = rgbToHex;
 module.exports.hexToRgb = hexToRgb;

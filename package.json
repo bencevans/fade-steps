@@ -1,5 +1,5 @@
 {
-  "name": "fader",
+  "name": "fade-steps",
   "version": "0.0.0",
   "description": "Generate an array of steps for fading between colours",
   "main": "index.js",
