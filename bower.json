@@ -1,0 +1,23 @@
+{
+  "name": "fader",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Ben Evans <ben@bensbit.co.uk>"
+  ],
+  "description": "Generate an array of steps for fading between colours",
+  "keywords": [
+    "colour",
+    "fade",
+    "hex",
+    "rgb"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
