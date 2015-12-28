@@ -34,6 +34,10 @@ function rgbToHex (r, g, b) {
 }
 
 function hexToRgb (str) {
+  if (!str) {
+    throw new Error('Invalid Colour Hex')
+  }
+
   str = str.match(/^#?([0-9|a-f]{3,6})$/i)
 
   if (!str || str[1].length !== 3 && str[1].length !== 6) {

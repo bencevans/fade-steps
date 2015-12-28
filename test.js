@@ -2,10 +2,13 @@ const test = require('tape')
 const fadeSteps = require('./')
 
 test('fadeSteps', function (t) {
-  t.plan(3)
+  t.plan(4)
   t.deepEqual(fadeSteps('000', 'fff', 2), ['000000', 'ffffff'], 'shorthand')
   t.deepEqual(fadeSteps('000000', 'ffffff', 2), ['000000', 'ffffff'], 'longhand')
   t.deepEqual(fadeSteps('000000', 'ff00ff', 3), ['000000', '800080', 'ff00ff'], 'multistep')
+  t.throws(function () {
+    fadeSteps()
+  }, /Invalid Colour Hex/, 'throws on invalid colour')
 })
 
 test('.hexToRgb', function (t) {
