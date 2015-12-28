@@ -19,11 +19,7 @@ const colours = fadeSteps(startColour, endColour, stepCount)
 
 console.log(colours)
 /*
-[ '#000',
-  '#40040',
-  '#80080',
-  '#bf0bf',
-  '#ff0ff' ]
+[ '000000', '400040', '800080', 'bf00bf', 'ff00ff' ]
 */
 ```
 
